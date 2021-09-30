@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello {{.}}</p>
+    <p>Choose your favourite programming language</p>
+    <form action="" method="POST" autocomplete="off">
+        <input type="radio" id="golang" name="fav-language" value="golang">
+        <label for="golang">golang</label><br>
+        <input type="radio" id="python" name="fav-language" value="python">
+        <label for="python">python</label><br>
+        <input type="radio" id="java" name="fav-language" value="java">
+        <label for="java">java</label><br>
+        <input type="radio" id="nodejs" name="fav-language" value="nodejs">
+        <label for="nodejs">nodejs</label><br>
+        <button type="submit">vote</button>
+    </form>
+    <a href="/logout">Logout</a>
+</body>
+</html>

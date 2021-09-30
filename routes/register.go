@@ -38,5 +38,5 @@ func Register(ctx *fiber.Ctx) error {
 		return fiber.DefaultErrorHandler(ctx, err)
 	}
 	fmt.Println(res.InsertedID)
-	return ctx.Render("templates/login.gohtml",nil)
+	return ctx.Redirect("/login")
 }

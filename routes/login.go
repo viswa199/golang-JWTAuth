@@ -59,9 +59,7 @@ func Login(ctx *fiber.Ctx) error {
 			HTTPOnly: true,
 		}
 		ctx.Cookie(&cookie)
-		return ctx.JSON(fiber.Map{
-			"message": "Login Succeeded",
-		})
+		return ctx.Render("templates/dashboard.gohtml",Credentials.Username)
 	}
 	return ctx.SendString("Invalid Username and Password.")
 }
