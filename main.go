@@ -34,9 +34,11 @@ func main() {
 	//setting up our roots
 	app.Get("/", Home)
 	app.Post("/register", routes.Register)
-	app.Get("/loginPage", routes.LoginPage)
+	app.Get("/login", routes.LoginPage)
 	app.Post("/login", routes.Login)
 	app.Get("/dashboard",routes.Dashboard)
+	app.Post("/dashboard",routes.Dashboard)
+	app.Get("/logout",routes.Logout)
 
 	//setting up server
 	app.Listen(":8080")
